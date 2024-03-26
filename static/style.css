@@ -1,0 +1,70 @@
+/* .julee-regular {
+  font-family: "Julee", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+* {
+    color: white;
+    background: black;
+    }
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Julee", cursive;
+    font-size: large;
+    }
+
+.logo {
+    max-width: 75%;
+    height: auto
+    }
+
+.instructions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Julee", cursive;
+    font-size: large;
+    }
+
+.instructions h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.checkbox-column {
+            width: 10%; /* Adjust this value to change the number of columns */
+        }
+
+@media only screen and (max-width: 600px) {
+    .checkbox-column {
+        width: 100%;
+    }
+}
+
+#checkboxContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#saveButton {
+    align: center;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
