@@ -24,6 +24,11 @@
         <!-- Checkboxes will be added here dynamically -->
     </div>
 
+    <div class="multibutton">
+        <button id="selectAll">Select All Hunters</button>
+        <button id="deselectAll">Deselect All Hunters</button>
+    </div>
+
     <div class="button">
         <button id="saveButton">Select a Hunter</button>
     </div>
@@ -62,6 +67,22 @@
             columnDiv.appendChild(label);
             columnDiv.appendChild(document.createElement("br")); // Add a line break after each checkbox
         }
+
+        // Event listener to select all checkboxes
+        document.getElementById("selectAll").addEventListener("click", function() {
+            let checkboxes = document.querySelectorAll('#checkboxContainer input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+                checkbox.checked = true;
+            });
+        });
+
+        // Event listener to deselect all checkboxes
+        document.getElementById("deselectAll").addEventListener("click", function() {
+            let checkboxes = document.querySelectorAll('#checkboxContainer input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+                checkbox.checked = false;
+            });
+        });
 
         document.getElementById("saveButton").addEventListener("click", function() {
         // Get all checked checkboxes

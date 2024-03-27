@@ -58,6 +58,34 @@
     justify-content: space-around;
 }
 
+.multibutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+#selectAll {
+    align: center;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deselectAll {
+    align: center;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 #saveButton {
     align: center;
     margin: 20px;
